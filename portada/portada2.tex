@@ -1,0 +1,50 @@
+% !TeX root=../Plantilla_MT.tex
+\thispagestyle{empty}
+\begin{minipage}{8cm}
+\begin{flushleft}
+\begin{large}
+\noindent Universidad de Concepción\\
+Facultad de Ingeniería\\
+Departamento de Ingeniería Eléctrica\\[2cm]
+\end{large}
+\end{flushleft}
+\end{minipage}
+\hfill
+\begin{minipage}{8cm}
+\begin{flushright}
+\begin{large}
+\noindent Profesor patrocinante:\\[0.5em]
+\makeatletter
+\@ProfPatrocinante
+\makeatother
+\end{large}
+\end{flushright}
+\end{minipage}
+
+\vspace*{6cm}
+
+\begin{center}
+
+% Titulo
+\makeatletter
+% \par corrige el espacio entre lineas al cambiar
+% el tamaño de la fuente
+{\Huge\@title \par}%{\ \\[0.5em]}
+\makeatother
+\vspace*{\fill}
+%\includegraphics[width=0.25\textwidth]{logoudec}\\[1cm]
+%{\Large{\textsf{por}}}%\\[1cm]
+% Autor y supervisor
+%\makeatletter
+{\Large{\textbf{\Author}}}\\[1.6cm]
+{\Large{Informe de Memoria de Título\\ para optar al Título de}\par}
+\vspace{1cm}
+{\Large Ingeniero Civil Electrónico}
+%\makeatother
+\vfill
+{\Large \monthname\ \the\year}
+\end{center}
+\ifdefined\NoBgThispage
+\NoBgThispage
+\fi
+\newpage
